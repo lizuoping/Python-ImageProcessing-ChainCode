@@ -46,16 +46,7 @@ class point(object):
 
 class Chain:
     __neighborAry = [[0] for i in range(8)]
-    #__neighborCoord = [point for i in range(8)]
-    p0=point(0,0)
-    p1=point(1,0)
-    p2=point(2,0)
-    p3=point(3,0)
-    p4=point(4,0)
-    p5=point(5,0)
-    p6=point(6,0)
-    p7=point(7,0)
-    __neighborCoord = [p0,p1,p2,p3,p4,p5,p6,p7]
+    __neighborCoord = [point(0,0) for i in range(8)]
     __nextDirTable = [6,0,0,2,2,4,4,6]
     __currentCC=lastQ=nextQ=0
     chain_data = []
